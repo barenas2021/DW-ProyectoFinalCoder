@@ -1,0 +1,195 @@
+#nosotros{
+
+
+    main{
+        font-family: $textoTitulos;
+        font-style: normal;
+        font-weight: 400;
+        background-color: $bgColor1;
+        color: $colorContacto2;
+
+        h1{
+            text-align: center; 
+            padding: 3em;
+            color: $color6;
+        }
+        h1:hover{
+            background-color: $bgcolor4;
+            color: $color1;
+        }
+        p{
+            text-align: center;
+            line-height: 1.6;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+            padding: 4%;
+            color: $color1;
+        }
+        p:hover{
+            color: $color6;;
+        }
+
+        
+
+        //* ******SECCION  ECOFRIENDLY
+        .hogaresEcofriendly{
+            display: grid;
+            grid-template-columns: 40fr 60fr;
+            grid-template-rows: 40fr;
+            justify-items: center;
+            align-items: stretch;
+            grid-column-gap: 1rem;
+            grid-row-gap: 2rem;
+            padding: 2vh;
+            background-color: $bgcolor9;
+           
+
+        .tituloEcofriendly{
+            display: grid;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            padding: 2vh;    
+            color: $color1;   
+        }
+        
+        .tituloEcofriendly:hover{
+           color:$color8;
+           text-decoration-line: underline;
+        }
+        
+        .parrafoEcofriendly1{
+            display: grid;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            color: $color1;   
+        }
+
+        .parrafoEcofriendly1:hover{
+            background-color: $bgcolor8;
+            color:$color8;
+        }
+
+        .parrafoEcofriendly2{ 
+            display: grid;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            color: $color1;   
+        }
+        .parrafoEcofriendly2:hover{
+            background-color: $bgcolor8;
+            color:$color8;
+        }
+
+}       
+        .enfoque{  
+            display: grid;
+            grid-template-columns: 60fr 40fr;
+            grid-template-rows: 40fr;
+            justify-items: center;
+            align-items: stretch;
+            grid-column-gap: 2rem;
+            background-color: $bgcolor8;
+            padding: 5rem;
+            margin-top: 5rem;
+
+            .parrafoEnfoque{
+                color: $color7;
+                padding: 5rem;
+            }
+            .parrafoEnfoque:hover{
+                background-color: $bgcolor9;
+            }
+            .tituloEnfoque{
+                color: $color7;
+            }
+            .tituloEnfoque:hover{
+                text-decoration-line: underline;
+            }   
+
+          
+}
+
+.gridPadre{
+    display: grid;
+    grid-template-columns: 33fr 33fr 33fr;
+    grid-column-gap: 3vh;
+    
+   .financiamiento:first-child{
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start:1;
+        grid-column-end: 2;
+        grid-template-rows: 20fr 55fr 150fr;
+        justify-items: center;
+        align-items: center;
+
+            .tituloPilares1{
+                color: $color2;
+                font-weight: bold;
+                text-align: center;
+                word-spacing: 2vh;
+                font-family: Roboto, sans-serif;
+                font-size: 1.5rem;
+            }   
+            .parrafoPilares1{
+                color: $color1;
+            }
+            .imagenPilares1{
+                grid-row-gap: 2vh;
+            }
+    }
+
+    .planeta:nth-child(2){
+        display: grid;
+        grid-row-start:1;
+        grid-row-end:2;
+        grid-column-start:2;
+        grid-column-end: 3;
+        grid-template-rows: 20fr 55fr 150fr;
+        justify-items: center;
+        align-items: center;
+            .tituloPilares2{
+                color: $color2;
+                font-weight: bold;
+                text-align: center;
+                word-spacing: 2vh;
+                font-family: Roboto, sans-serif;
+                font-size: 1.5rem;
+            }
+            .parrafoPilares{
+                grid-row-gap: 2vh;
+            }
+            .imagenPilares2{
+
+            }
+    }
+    .comunidad:nth-child(3){
+        display: grid;
+        grid-row-start:1;
+        grid-row-end:2;
+        grid-column-start:3;
+        grid-column-end: 4;
+        grid-template-rows: 20fr 55fr 150fr;
+        justify-items: center;
+        align-items: center;
+
+        .tituloPilares3{
+            color: $color2;
+                font-weight: bold;
+                text-align: center;
+                word-spacing: 2vh;
+                font-family: Roboto, sans-serif;
+                font-size: 1.5rem;
+        }
+        .parrafoPilares3{
+            grid-row-gap: 2vh;
+        }
+        .imagenPilares3{
+
+        }
+}
+
+}
+}
+}

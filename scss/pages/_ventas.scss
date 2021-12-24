@@ -1,0 +1,71 @@
+#ventas{ 
+
+
+main{
+    font-family: $textoParrafos;
+    font-weight: 400;
+    font-style: normal;
+    h1 {
+        font-family: $textoParrafos;
+        font-weight: 200;
+        color: $bgcolor6;
+        font-size: 60px;
+        padding-top: 4rem;
+        text-align: center;
+        
+      }
+
+
+    //   ***SECCION COMERCIALIZACION VIVIENDAS  ******
+
+    .casaVenta{
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-rows: 50% 50%;
+           background-color: $bgcolor5;
+            align-items: center;
+            margin: 100px 10px 100px 10px;
+            font-size: 10px;
+            
+    }
+    .grid-item:first-child{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            text-align: center;
+            transition: background-color 0.5s, color 1s;
+            color: $color6;
+    }
+    .grid-item:nth-child(1){
+        grid-row-start: 1;
+        grid-row-end: 2;
+       
+            text-align: center;
+            background-color: $bgcolor5;
+            font-size: 25px;
+            transition: background-color 0.5s, color 1s;
+    }
+    // ** grid caracteristicas**
+    .grid-item:nth-child(2){
+        grid-row-start: 2;
+        grid-row-end: 3;
+        text-align: end;
+        border: $color2 solid 1px;
+            background-color: $bgcolor5;
+            font-size: 20px;
+            transition: background-color 0.5s, color 1s;
+            padding-left: 20px;
+            margin-left: 20px;
+    }
+    .grid-item:nth-child(3){
+        grid-row-start: 2;
+        grid-row-end: 3;
+        text-align: end;
+           
+            background-color: $bgcolor5;
+            font-size: 25px;
+            transition: background-color 0.5s, color 1s;
+    }
+}
+
+
+}

@@ -1,0 +1,77 @@
+
+
+#proyectos{ 
+
+
+    main{
+        font-family: $textoTitulos;
+        font-style: normal;
+        font-weight: 400;
+        background-color: $bgColor1;
+
+        h2{
+            text-align: center;
+            color: $color6;
+            font-size: 7vh;
+            padding: 5%;
+        }
+        p{
+                text-align: center;
+                line-height: 1.6;
+                letter-spacing: 2px;
+                word-spacing: 5px;
+            padding: 5%;
+            color: $color1;
+        }
+        h1{
+            text-align: center; 
+            padding: 3em;
+        }
+
+        h3{
+            color:$colorContacto4;
+            font-weight: bold;
+            font-size: 150%;
+            text-align: end;
+            letter-spacing: 1rem;
+            padding: 5em;
+        }
+
+        h3:hover{
+            color: $color1;
+        }
+        .obraNueva{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: stretch;
+            gap: 5px;
+        }
+
+        .rehabilitaciones{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: stretch;
+            gap: 5px;
+        }
+
+        .interiorismo{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: stretch;
+            gap: 5px;
+        }
+
+    }
+
+
+
+}
+
+
+   

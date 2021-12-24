@@ -1,0 +1,303 @@
+
+
+
+// Trabajo sobre el index usando el id directamente y anidando
+#index{ 
+
+
+    
+    main {
+        font-family: $textoParrafos;
+        font-style: normal;
+        font-weight: 400;
+       background-color: $bgColor1;
+
+       
+        h2{
+            font-family:$textoTitulos;
+            color: $color1;
+            text-align: center;
+            text-transform: none;
+            font-size: 4em;
+            padding-top: 10%;
+            letter-spacing: 2px;
+            word-spacing: 10px;
+            font-weight: 400;
+            font-display: swap;
+            line-height: 1.9;
+         }
+         h2:hover{
+            color: $color2;
+         }
+        p{
+            text-align: center;
+            margin-top: 2%;
+            color: $color1;  
+            letter-spacing: 2px;
+            word-spacing: 20%;      
+        }
+      
+// *** SECCION PRESENTACION DE LA EMPRESA*******
+        .presentacionEmpresa {
+            display: flex;
+            background-color: $bgColor2;
+            margin-right: 20px;
+        }
+
+        .presentacionEmpresa:hover{
+            background-color: $bgColor2;
+            color: $color2;
+        }
+//***** SECCION OBJETIVOS DE LA EMPRESA*******
+        .objetivos{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            padding: 10%;
+            background-color: $bgcolor4;
+            
+            h4{
+                font-size: 90%;
+                font-weight: bold;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+
+            
+            .compromiso{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+               align-items: center;
+               align-content: center;
+               width: 50%;
+               margin-bottom: 5%;
+               font-size: 80%
+            }
+
+            .honestidad{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                align-content: center;
+                align-content: center;
+                width: 50%;
+                margin-bottom: 5%;
+                font-size: 80%
+            }
+
+            .equipo{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                align-content: center;
+                width: 50%;
+                font-size: 80%
+            }
+
+            .excelencia{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                width: 50%;
+                font-size: 80%
+            }
+        }
+
+
+        // *** SECCION SERVICIOS DE LA EMPRESA*******
+        section.servicios {
+            display: grid;
+            grid-template-columns: 20fr 40fr 40fr;
+            grid-template-rows: 20fr 45fr;
+            gap: 5px;
+            border-color: $bgColor1;
+            margin: 50px 10px 50px 10px;
+            padding: 5%;
+        }
+
+        .itemServicios1{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            text-decoration: underline;
+            text-align: center;
+            background-color: $bgcolor5;
+            font-size: 25px;
+            transition: background-color 0.5s, color 1s;
+            padding: 5%;
+        }
+
+        .itemServicios1:hover{
+            background-color: $colorContacto4;
+            color: $color4;
+        }
+
+        .itemServicios2{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            background-color: $bgcolor5;
+            text-align: center;
+            transition: background-color 0.2s, color 1s;
+            padding: 5%;
+        }
+
+        .itemServicios2:hover{
+            background-color: $colorContacto4;
+            color: $color4;
+        }
+
+        .itemServicios3{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            background-color: $bgcolor4;
+            text-align: center;
+            padding: 30px;
+            transition: background-color 0.2s, color 1s;
+            padding: 5%;
+        }
+
+        .itemServicios3:hover{
+            background-color: $bgcolor6;
+            color: $bgColor1;
+        }
+
+        .itemServicios4{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            background-color: $bgcolor5;
+            text-align: center;
+            transition: background-color 0.2s, color 1s;
+            padding: 5%;
+        }
+
+        .itemServicios4:hover{
+            background-color: $colorContacto4;
+            color: $color4;
+        }
+       
+        .itemServicios5{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            background-color: $bgcolor4;
+            text-align: center;
+            padding: 30px;
+            transition: background-color 0.2s, color 1s;
+        }
+      
+        .itemServicios5:hover{
+            background-color: $bgcolor6;
+            color: $bgColor1;
+            // transition: ;
+        }
+        
+        // *** SECCION SOSTENIBILIDAD*******
+        .sostenibilidad{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+        align-content: center;
+        margin-bottom: 10%;
+        
+        div{
+            color: $color2;
+        }
+        div:hover{
+            font-weight: bold;
+            color: $bgcolor6;
+            letter-spacing: 2%;
+            word-spacing: 5%;
+        }
+
+    }
+//***** SECCION PROMOCION LOS AROMOS*******
+.losAromos{ 
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 10% 90% 20%;
+    grid-column-gap: 1%;
+    grid-row-gap: 2%;
+    margin-bottom: 7rem;
+    
+//** info propiedades
+        .gridAromos:first-child{
+        display: grid;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        font-size: 200%;
+        font-weight: bold;
+        background-color: $bgcolor5;
+        color: $color1;
+        font-size: 200%;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        justify-items: start;
+        padding-left: 5%;
+        padding-bottom: 5%;
+    }
+    
+       .gridAromos:first-child:hover{
+        background-color: $color2;
+        color: $color5;
+   
+    }
+    //*titulo
+    .gridAromos:nth-child(2){
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color: $bgcolor5;
+        color: $color1;
+        font-size: 200%;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+       justify-items: end;
+        padding-right: 5%;
+       }
+    .gridAromos:nth-child(2):hover{
+        background-color: $color2;
+        color: $color5;
+        
+    }
+     
+    //*imagen
+    .gridAromos:nth-child(3){
+        display: grid;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        justify-items: stretch;
+        align-items: center;
+       
+    }
+    //*imagen
+    .gridAromos:nth-child(4){
+        display: grid;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        justify-items: stretch;
+        align-items: center;
+        
+    }
+
+
+    }   
+    } 
+  
+}

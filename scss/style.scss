@@ -1,0 +1,21 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+@import "base/variables";
+@import "base/listas";
+// @import "base/mediaQuery";
+
+
+@import "pages/contacto";
+@import "pages/index";
+@import "pages/nosotros";
+@import "pages/proyectos";
+@import "pages/ventas";
+
+
+@import "components/header";
+@import "components/footer";
+
+@import "querys/querys";
