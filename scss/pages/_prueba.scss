@@ -1,0 +1,82 @@
+.gridPadre{
+    display: grid;
+    grid-template-columns: 33fr 33fr 33fr;
+    grid-column-gap: 3vh;
+    
+   .financiamiento:first-child{
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start:1;
+        grid-column-end: 2;
+        grid-template-rows: 20fr 55fr 150fr;
+        justify-items: center;
+        align-items: center;
+
+            .tituloPilares1{
+                color: $color2;
+                font-weight: bold;
+                text-align: center;
+                word-spacing: 2vh;
+                font-family: Roboto, sans-serif;
+                font-size: 1.5rem;
+            }   
+            .parrafoPilares1{
+                color: $color1;
+            }
+            .imagenPilares1{
+                grid-row-gap: 2vh;
+            }
+    }
+
+    .planeta:nth-child(2){
+        display: grid;
+        grid-row-start:1;
+        grid-row-end:2;
+        grid-column-start:2;
+        grid-column-end: 3;
+        grid-template-rows: 20fr 55fr 150fr;
+        justify-items: center;
+        align-items: center;
+            .tituloPilares2{
+                color: $color2;
+                font-weight: bold;
+                text-align: center;
+                word-spacing: 2vh;
+                font-family: Roboto, sans-serif;
+                font-size: 1.5rem;
+            }
+            .parrafoPilares{
+                grid-row-gap: 2vh;
+            }
+            .imagenPilares2{
+
+            }
+    }
+    .comunidad:nth-child(3){
+        display: grid;
+        grid-row-start:1;
+        grid-row-end:2;
+        grid-column-start:3;
+        grid-column-end: 4;
+        grid-template-rows: 20fr 55fr 150fr;
+        justify-items: center;
+        align-items: center;
+
+        .tituloPilares3{
+            color: $color2;
+                font-weight: bold;
+                text-align: center;
+                word-spacing: 2vh;
+                font-family: Roboto, sans-serif;
+                font-size: 1.5rem;
+        }
+        .parrafoPilares3{
+            grid-row-gap: 2vh;
+        }
+        .imagenPilares3{
+
+        }
+}
+
+}

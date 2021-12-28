@@ -4,14 +4,11 @@
 // Trabajo sobre el index usando el id directamente y anidando
 #index{ 
 
-
-    
     main {
         font-family: $textoParrafos;
         font-style: normal;
         font-weight: 400;
-       background-color: $bgColor1;
-
+        background-color: $bgColor1;
        
         h2{
             font-family:$textoTitulos;
@@ -22,7 +19,7 @@
             padding-top: 10%;
             letter-spacing: 2px;
             word-spacing: 10px;
-            font-weight: 400;
+            font-weight: 200;
             font-display: swap;
             line-height: 1.9;
          }
@@ -41,7 +38,8 @@
         .presentacionEmpresa {
             display: flex;
             background-color: $bgColor2;
-            margin-right: 20px;
+            margin-right: 3%;
+            margin-left: 3%;
         }
 
         .presentacionEmpresa:hover{
@@ -56,7 +54,7 @@
             justify-content: space-around;
             align-items: center;
             width: 100%;
-            padding: 10%;
+            padding: 5%;
             background-color: $bgcolor4;
             
             h4{
@@ -68,16 +66,15 @@
                 }
             }
 
-            
             .compromiso{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
-               align-items: center;
-               align-content: center;
-               width: 50%;
-               margin-bottom: 5%;
-               font-size: 80%
+                align-items: center;
+                align-content: center;
+                width: 50%;
+                margin-bottom: 5%;
+                font-size: 80%
             }
 
             .honestidad{
@@ -114,13 +111,13 @@
 
 
         // *** SECCION SERVICIOS DE LA EMPRESA*******
-        section.servicios {
+        .servicios {
             display: grid;
             grid-template-columns: 20fr 40fr 40fr;
             grid-template-rows: 20fr 45fr;
-            gap: 5px;
+            gap: 5%;
             border-color: $bgColor1;
-            margin: 50px 10px 50px 10px;
+            margin: 15% 10% 15% 10%;
             padding: 5%;
         }
 
@@ -130,7 +127,7 @@
             text-decoration: underline;
             text-align: center;
             background-color: $bgcolor5;
-            font-size: 25px;
+            font-size: 1em;
             transition: background-color 0.5s, color 1s;
             padding: 5%;
         }
@@ -222,11 +219,11 @@
 //***** SECCION PROMOCION LOS AROMOS*******
 .losAromos{ 
     display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 10% 90% 20%;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 20% 70% 30%;
     grid-column-gap: 1%;
     grid-row-gap: 2%;
-    margin-bottom: 7rem;
+    
     
 //** info propiedades
         .gridAromos:first-child{
@@ -235,13 +232,11 @@
         grid-row-end: 4;
         grid-column-start: 1;
         grid-column-end: 3;
-        font-size: 200%;
+        font-size: 70%;
         font-weight: bold;
         background-color: $bgcolor5;
         color: $color1;
-        font-size: 200%;
-        letter-spacing: 2px;
-        word-spacing: 2px;
+        word-spacing: 0.5em;
         justify-items: start;
         padding-left: 5%;
         padding-bottom: 5%;
@@ -252,7 +247,7 @@
         color: $color5;
    
     }
-    //*titulo
+    //*titulo Casas Nuevas a Estrenar
     .gridAromos:nth-child(2){
         display: grid;
         grid-row-start: 1;
@@ -261,11 +256,12 @@
         grid-column-end: 3;
         background-color: $bgcolor5;
         color: $color1;
-        font-size: 200%;
+        font-size: 90%;
         letter-spacing: 2px;
         word-spacing: 2px;
-       justify-items: end;
+        justify-items: end;
         padding-right: 5%;
+        
        }
     .gridAromos:nth-child(2):hover{
         background-color: $color2;

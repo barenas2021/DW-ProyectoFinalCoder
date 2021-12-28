@@ -1,0 +1,173 @@
+@media screen and  (max-width:480px){
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        align-content: stretch;
+        //* no he puesto align-items
+
+
+       
+
+        h2{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-items: flex-end;
+        }
+
+        a {
+            letter-spacing: none;
+            word-spacing: none;
+        }
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+
+        nav{
+            flex-direction: column;
+            align-items: center;
+            column-gap: 1.5rem;
+
+        }
+
+         .logoSocial{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            column-gap: 1.5rem;
+         }
+
+    }
+
+    #index{
+
+        main{
+            font-family: $textoParrafos;
+            font-style: normal;
+            font-weight: 200;
+            background-color: $bgColor1;
+
+                h2{
+                    font-size: 2em;  
+                }
+
+                .objetivos{
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 70%;
+                    font-weight: bold;
+                }
+
+                .servicios{
+                    display: grid;
+                    grid-template-columns: 10fr 30fr 30fr;
+                    grid-template-rows: 20fr 45fr;
+                    margin: 5% 1% 5% 1%;
+                }
+                .losaromos{
+                    display: grid;
+                    grid-template-columns: 45% 45%;
+                    grid-template-rows: 20% 70% 40%;
+                    grid-column-gap: 1%;
+                    grid-row-gap: 2%;
+                    margin-bottom: 7rem;
+
+                    .gridAromos:first-child{
+                        font-size: 50%;  
+                    }
+  
+                    .gridAromos:nth-child(2){
+                        font-size: 95%;
+                        font-weight: bold;
+                        }
+                }
+        }
+
+
+    }
+
+    #nosotros{
+        font-weight: 200;
+
+        main {
+
+            .hogaresEcofriendly{
+                display: inline-block;
+                
+    
+                .tituloEcofriendly{
+                grid-row-start: 1;
+                grid-row-end: 2;
+                font-size: 100%;
+              }
+                .parrafoEcofriendly1{
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    font-size: 100%;
+              }
+              .parrafoEcofriendly{
+                grid-row-start: 1;
+                grid-row-end: 2;
+                font-size: 10% ;
+              }
+     
+            }
+        }
+
+        .enfoque{
+            display: grid;
+        }
+
+        .gridPadre{
+            display: grid;
+            grid-template-columns: 80%;
+            grid-template-rows: 60% 60% 60%;
+            grid-row-gap: 1vh;
+            
+            .financiamiento:first-child{
+                display: grid;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                grid-column-start:1;
+                grid-column-end: 2;
+                grid-template-rows: 20fr 55fr 150fr;
+        
+        }
+        .planeta:nth-child(2){
+            display: grid;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start:1;
+            grid-column-end: 2;
+            grid-template-rows: 20fr 55fr 150fr;
+        }
+        .comunidad:nth-child(3){
+            display: grid;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start:1;
+            grid-column-end: 2;
+            grid-template-rows: 20fr 55fr 150fr;
+
+
+    }
+}
+    }
+}

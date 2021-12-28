@@ -3,17 +3,21 @@
 
 main{
     font-family: $textoParrafos;
-    font-weight: 400;
+    font-weight: 1,400;
     font-style: normal;
+    
     h1 {
-        font-family: $textoParrafos;
-        font-weight: 200;
+        font-family: Montserrat;
+        font-weight: normal;
         color: $bgcolor6;
-        font-size: 60px;
+        font-size: 200%;
         padding-top: 4rem;
-        text-align: center;
-        
-      }
+        text-align: center;      
+    }
+    h1:hover{
+        text-transform: capitalize;
+        font-weight: bold;
+    }
 
 
     //   ***SECCION COMERCIALIZACION VIVIENDAS  ******
@@ -22,10 +26,11 @@ main{
             display: grid;
             grid-template-columns: 40% 60%;
             grid-template-rows: 50% 50%;
-           background-color: $bgcolor5;
+             background-color: $bgcolor5;
             align-items: center;
-            margin: 100px 10px 100px 10px;
-            font-size: 10px;
+            margin: 10em 1em 10em 0em;
+           
+            
             
     }
     .grid-item:first-child{
@@ -34,36 +39,50 @@ main{
             text-align: center;
             transition: background-color 0.5s, color 1s;
             color: $color6;
+            font-size: 1em;
+            line-height: 1.6;
+            
     }
-    .grid-item:nth-child(1){
-        grid-row-start: 1;
-        grid-row-end: 2;
-       
-            text-align: center;
-            background-color: $bgcolor5;
-            font-size: 25px;
-            transition: background-color 0.5s, color 1s;
+    .grid-item:first-child:hover{
+        background-color: $bgColor2;
+        color: $color1
     }
-    // ** grid caracteristicas**
     .grid-item:nth-child(2){
         grid-row-start: 2;
         grid-row-end: 3;
         text-align: end;
         border: $color2 solid 1px;
-            background-color: $bgcolor5;
-            font-size: 20px;
-            transition: background-color 0.5s, color 1s;
-            padding-left: 20px;
-            margin-left: 20px;
+        background-color: $bgcolor5;
+        font-size: 1em;
+        transition: background-color 0.5s, color 1s;
+        padding: 20%;
+        
+        
+
     }
+    .grid-item:nth-child(2):hover{
+        background-color: $bgColor2;
+        color: $color6;
+    }
+    
     .grid-item:nth-child(3){
-        grid-row-start: 2;
-        grid-row-end: 3;
-        text-align: end;
-           
+            grid-row-start: 1;
+            grid-row-end: 2;
+            text-align: center;
             background-color: $bgcolor5;
-            font-size: 25px;
+          
             transition: background-color 0.5s, color 1s;
+           
+        
+    }
+    .grid-item:nth-child(4){
+            grid-row-start: 2;
+            grid-row-end: 3;
+            text-align: center;
+            background-color: $bgcolor5;
+           
+            transition: background-color 0.5s, color 1s;
+          
     }
 }
 

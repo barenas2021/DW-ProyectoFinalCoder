@@ -3,6 +3,10 @@
     padding:0;
 }
 
+body {
+    width: 100vw;
+}
+
 @import "base/variables";
 @import "base/listas";
 // @import "base/mediaQuery";
